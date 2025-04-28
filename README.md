@@ -1,4 +1,4 @@
-# Raga Identifier (Learning Project)
+# Raga Identifier
 
 This is a machine learning project built to identify Indian classical ragas based on small audio clips.
 
