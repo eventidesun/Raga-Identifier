@@ -4,17 +4,14 @@ import numpy as np
 def extract_features(audio_path):
     y, sr = librosa.load(audio_path)
 
-    # Extracting the pitch
     pitch, voiced_flag, voiced_probs = librosa.pyin(
         y,
         fmin=librosa.note_to_hz('C2'),
         fmax=librosa.note_to_hz('C7')
     )
 
-    # Extract MFCCs
     mfccs = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=13)
 
-    # Combine features
     features = np.hstack([
         np.nanmean(pitch),
         np.nanstd(pitch),
