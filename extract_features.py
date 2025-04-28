@@ -4,7 +4,7 @@ import numpy as np
 def extract_features(audio_path):
     y, sr = librosa.load(audio_path)
 
-    # Extract pitch
+    # Extracting the pitch
     pitch, voiced_flag, voiced_probs = librosa.pyin(
         y,
         fmin=librosa.note_to_hz('C2'),
