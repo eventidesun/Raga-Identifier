@@ -1,7 +1,6 @@
 import joblib
 from extract_features import extract_features
 
-# Loading the trained model
 model = joblib.load('raga_model.pkl')
 
 def predict(audio_path):
