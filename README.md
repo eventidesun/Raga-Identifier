@@ -2,7 +2,7 @@
 
 ## Project Overview
 This project is a Raga Identifier system that predicts the raga of an input audio clip based on its musical features.
-It focuses on Carnatic music and applies machine learning techniques to solve a real-world audio classification problem.
+It focuses on Carnatic and Hindustani music and applies machine learning techniques to solve a real-world audio classification problem.
 
 The project automates:
 - Downloading YouTube audio samples
